@@ -44,7 +44,7 @@ public class Donations {
 
 	}
 	
-	//returns stats
+	//prints stats
 	public void getStatistics(){
 		
 		System.out.println();
