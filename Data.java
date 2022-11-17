@@ -1,7 +1,7 @@
 
 public class Data
 {
-   /**
+   /*
       Computes the average of the measures of the given objects.
       @param objects an array of Measurable objects
       @return the average of the measures
@@ -23,7 +23,7 @@ public class Data
       }
    }
 
-   /**
+   /*
       Computes the maximum of the measures of the given objects.
       @param objects an array of Measurable objects
       @return the maximum of the measures, null if array is empty
@@ -46,4 +46,25 @@ public class Data
 
       return max;
    }
+   
+   // computes min
+   public static double min(Measurable[] objects)
+   {
+	   if (objects.length == 0)
+	      {
+	         return 0;
+	      }
+	      //Measurable max = objects[0];
+	      double min = Double.MAX_VALUE;
+	      for (Measurable obj : objects)
+	      {
+	         if (obj.getMeasure() < min)
+	         {
+	            min = obj.getMeasure();
+	         }
+	      }
+
+	      return min;
+   }
+   
 }
