@@ -16,6 +16,7 @@ public class InputOutputFiles {
 	  while (!haveFile) {
 		  
 		  System.out.println("Please enter the path to open the input file for example C:\\Downloads\\lines.txt: ");
+		  // what I used during my testing: C:\Users\Anjali\Downloads\lines.txt
 	  
 		  try {
 			  String fileString = userInput.nextLine();
@@ -28,7 +29,10 @@ public class InputOutputFiles {
 	  
 	  }
       
-      PrintWriter outputFile = new PrintWriter("C:\\Users\\Anjali\\Downloads\\outlines.txt");
+	  // what I used during my testing: 
+      // PrintWriter outputFile = new PrintWriter("C:\\Users\\Anjali\\Downloads\\outlines.txt");
+	  // I put the original back for you.
+      PrintWriter outputFile = new PrintWriter("C:\\Users\\geckert\\Downloads\\e02\\student\\outlines.txt");
      
       while (in.hasNext()) {
       String what = in.next();
